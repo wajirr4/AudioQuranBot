@@ -1,18 +1,3 @@
-# AudioQuranBot -- Listen to the Holy Qur'an on Telegram
-# Copyright (C) 1438-1439 AH  Rahiel Kasim
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import asyncio
 import signal
 from time import time
@@ -48,7 +33,7 @@ def usage(chat: Chat, match):
         "Send the number of a surah and I'll send you its audio recitation by "
         "Shaykh Mahmoud Khalil al-Husary. For example send <b>36</b> and you'll "
         "receive the recitation of surah Yasin. Send /index to see a list of available surahs.\n\n"
-        "Talk to @BismillahBot for an English translation, tafsir and Arabic of individual verses."
+        "Bot Channel @BotMakerBD"
     )
     return chat.send_text(text, parse_mode="HTML")
 
@@ -60,7 +45,7 @@ def about(chat: Chat, match):
         "The recitation is by "
         "<a href=\"https://en.wikipedia.org/wiki/Mahmoud_Khalil_Al-Hussary\">Shaykh Mahmoud Khalil al-Husary</a> "
         "from <a href=\"http://torrent.mp3quran.net/details.php?id=3f2404b9cc6dfb5ccf70580a149fd8b87de0d8f1\">mp3quran.net</a>. "
-        "This bot is free software, the source code is available at: https://github.com/rahiel/AudioQuranBot."
+        "This bot is free software"
     )
     return chat.send_text(text, parse_mode="HTML")
 
